@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
  
-const char* ssid = "";
-const char* password = "";
+const char* ssid = "Sertify";
+const char* password = "hack1234";
  
 void setup () {
 
@@ -26,7 +26,7 @@ void loop() {
  
     HTTPClient http;  //Declare an object of class HTTPClient
  
-    http.begin("http://ocl-data-server.herokuapp.com/led");  //Specify request destination
+    http.begin("http://tree222.herokuapp.com/tree222");  //Specify request destination
     int httpCode = http.GET();                                                                  //Send the request
  
     if (httpCode > 0) { //Check the returning code
